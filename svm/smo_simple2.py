@@ -149,14 +149,14 @@ def plot(data_arr, labels_arr):
 def main():
     data_arr, labels_arr = util.load_dataset('testSet.txt')
     b, alphas = smo_simple(data_arr, labels_arr, 0.6, 0.001, 40)
-    print('b: ', b, 'alphas: ', alphas)
+    print('b: ', b, 'alphas: ', alphas) 
     # 0元素太多了，就打印几个就好了，SMO算法是随机的
     # 这种过滤只对numpy有用
     print(alphas[alphas > 0])
     # 画出支撑向量
     for i in range(100):
         if alphas[i] > 0:
-            print(data_arr[i], labels_arr[i])
+            print('support vector: ',data_arr[i], labels_arr[i])
 
 
 if __name__ == '__main__':

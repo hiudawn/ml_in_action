@@ -118,7 +118,7 @@ def testing_nb():
     print(test_entry, 'classified as: ', classify_nb(this_doc, p0v, p1v, pab))
 
 def split_text_test():
-    my_sent = 'This book is the best book on Python or M.L. I have ever laid eyes upon.'
+    my_sent = 'This book is the find_best book on Python or M.L. I have ever laid eyes upon.'
     # 简单分割，有很多标点
     print(my_sent.split())
     # 我感觉是多打了一个\，就是用非字母来切分数据
